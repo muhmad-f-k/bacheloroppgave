@@ -16,3 +16,4 @@ st.write(f'{n} + 1 = {n+1}')
 s = st.text_input('Type a your name in the box below')
 
 st.write(f'Hello {s}')
+
