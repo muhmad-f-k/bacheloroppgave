@@ -9,6 +9,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 connection_str = 'sqlite:///' + \
-                 os.path.join(BASE_DIR, 'finaldata.db?check_same_thread=False')
+                 os.path.join(BASE_DIR, 'database.db?check_same_thread=False')
 engine = create_engine(connection_str)
 base = declarative_base()
