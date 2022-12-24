@@ -1,19 +1,25 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+from app_pages.home_page import home_page
+from app_pages.contact_page import contact_page
+from app_pages.about_page import about_page
 
 
-st.title('Just a test')
 
-st.title('Simple Streamlit App')
+def main():
+  st.sidebar.title("Navigation")
+  page = st.sidebar.selectbox("Choose a page", ["Home", "About", "Contact"])
 
-st.text('Type a number in the box below')
+  if page == "Home":
+    home_page()
+  elif page == "About":
+    about_page()
+  elif page == "Contact":
+    contact_page()
 
-n = st.number_input('Number', step=1)
-
-st.write(f'{n} + 1 = {n+1}')
-
-s = st.text_input('Type a your name in the box below')
-
-st.write(f'Hello {s}')
-
+if __name__ == "__main__":
+  main()
