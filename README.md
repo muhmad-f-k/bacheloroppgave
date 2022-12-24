@@ -9,3 +9,4 @@ Developing Machine learning app for seaspray icing
 3. docker build -t streamlit_app .
 4. docker run -d -p 8501:8501 --name streamlit_app streamlit_app
 5. docker logs streamlit_app -f
+6. To access the website go to http://server-IP:8501
