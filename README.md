@@ -1,8 +1,9 @@
 # bacheloroppgave
 
-# Developing Machine learning app for seaspray icing
+## Developing Machine learning app for seaspray icing
 
-## How to build and run docker image from scource.
+
+### How to build and run docker image from scource.
 
 1. git clone https://github.com/muhmad-f-k/bacheloroppgave
 2. cd bacheloroppgave
